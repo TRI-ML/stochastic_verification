@@ -1,0 +1,31 @@
+max_steps: 20
+modded_geom_names:
+- SquareNut_g0_visual
+- SquareNut_g1_visual
+- SquareNut_g2_visual
+- SquareNut_g3_visual
+- SquareNut_g4_visual
+modded_geom_rgbs:
+- &id001 !!python/tuple
+  - 245
+  - 222
+  - 179
+- *id001
+- *id001
+- *id001
+- *id001
+model_filename: data/experiments/image/square_ph/diffusion_policy_cnn/train_0/checkpoints/latest.ckpt
+rollouts_per_sim: 2
+seeds:
+- 969328
+- 2721147
+- 1206881
+- 5165013
+- 2772252
+- 3840395
+- 5090892
+- 5486603
+- 802277
+- 225649
+task: square
+total_rollouts: 10
