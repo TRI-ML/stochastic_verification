@@ -37,7 +37,7 @@ The notebook `analyze_results_hardware.ipynb` loads this data and produces confi
 
 
 ## Analyzing The Bounds
-Comparing the tightness of the binomial bound we use to the Clopper-Pearson bound is done in the `binomial_CIs` repository (**LINK**). Specifically, the notebook `tradeoff_table.ipynb` produces Figure 3 in the paper.
+Comparing the tightness of the binomial bound we use to the Clopper-Pearson bound is done in the [`binomial_CIs`](https://github.com/TRI-ML/binomial_CIs) repository. Specifically, the notebook `tradeoff_table.ipynb` produces Figure 3 in the paper.
 
 Comparing the tightness of the CDF bound we use (based on the Kolmogorov-Smirnov test) to CDF bound from the DKW inequality is done in the **TODO** notebook. This notebook produces Figure 4 in the paper.
 
