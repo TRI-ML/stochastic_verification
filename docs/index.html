@@ -70,7 +70,7 @@
                   </div>
 
                   <div class="is-size-5 publication-authors">
-                    <span class="author-block"><sup>1</sup>sup>Stanford University, <sup>2</sup>Toyota Research Institute</span>
+                    <span class="author-block"><sup>1</sup>Stanford University, <sup>2</sup>Toyota Research Institute</span>
                   </div>
 
                   <div class="column has-text-centered">
@@ -151,44 +151,48 @@
 <!-- End paper abstract -->
 
 
-<!-- Image carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          First image description.
-        </h2>
+
+  
+  <!-- Hardware experiments -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Hardware Evaluation</h2>
+        <div class="content has-text-justified">
+          <p>
+            We obtain lower confidence bounds on the success rate of a diffusion policy tested in two out-of-distribution environments.
+            The confidence bounds we obtain make the most efficient use of the 50 samples used to estimate the performance of the robot.
+            The confidence bounds we obtain quantify our uncertainty in the performance of the robot in a concrete and interpretable manner.
+          </p>
+        </div>
       </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
     </div>
   </div>
-</div>
-</div>
 </section>
-<!-- End image carousel -->
+<!-- End paper abstract -->
+
+
+
+  <!-- Policy comparison -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Comparing Policies</h2>
+        <div class="content has-text-justified">
+          <p>
+            We can confidently compare two policies using our confidence bounds.
+            Here we apply our statistical bounds to the recent results from the <a href="https://arxiv.org/abs/2307.15818" target="_blank">RT-2 paper</a>, where the authors compare their RT-2 policy to a VC-1 policy in three settings designed to test emergent capabilities in symbol understanding, reasoning, and human recognition.
+            For each setting we find the 95% confidence intervals for policy success rate are disjiont, and we conclude with 95% confidence that RT-2 outperforms VC-1. 
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
 
 
 
@@ -214,38 +218,6 @@
 <!-- End youtube video -->
 
 
-<!-- Video carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <video poster="" id="video1" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video2">
-          <video poster="" id="video2" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <video poster="" id="video3" autoplay controls muted loop height="100%">\
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End video carousel -->
 
 
 
