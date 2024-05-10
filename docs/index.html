@@ -115,7 +115,8 @@
         type="video/mp4">
       </video>
       <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
+         When using a small number of policy rollouts to evaluate robot performance, it is important to quantify our uncertainty in the performance estimate.
+         In our paper we show how to place worst-case confidence bounds on the distribution of robot performance while using the observed performance from policy rollouts as efficiently as possible.
       </h2>
     </div>
   </div>
@@ -140,6 +141,27 @@
 <!-- End paper abstract -->
 
 
+<!-- Sim experiments -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Evaluation in Simulation</h2>
+        <div class="content has-text-justified">
+          <p>
+            We obtain upper confidence bounds on the cumulative distribution function (CDF) of the total reward obtained by diffusion policies in out-of-distribution robosuite environments.
+            An upper confidence bound on the CDF can be interpreted as the worst-case distribution of reward that is consistent with the observed policy rollouts.
+            Here we show representative policy rollouts for the Square environment, and plot the in-distribution CDF of reward and our upper confidence bound constructed from 40 out-of-distribution policy rollouts.
+            The confidence bounds we obtain quantify our uncertainty in the performance of the robot in a concrete and interpretable manner.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End hardware experiments -->
+
+
 
   
   <!-- Hardware experiments -->
@@ -147,11 +169,11 @@
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">Hardware Evaluation</h2>
+        <h2 class="title is-3">Evaluation in Hardware</h2>
         <div class="content has-text-justified">
           <p>
             We obtain lower confidence bounds on the success rate of a diffusion policy tested in two out-of-distribution environments.
-            The confidence bounds we obtain make the most efficient use of the 50 samples used to estimate the performance of the robot.
+            The confidence bounds we obtain make the most efficient use of the 50 policy rollouts used to estimate the performance of the robot.
             The confidence bounds we obtain quantify our uncertainty in the performance of the robot in a concrete and interpretable manner.
           </p>
         </div>
@@ -177,7 +199,7 @@
                 Here we apply our statistical bounds to the recent results from the <a href="https://arxiv.org/abs/2307.15818" target="_blank">RT-2 paper</a>, where the authors compare their RT-2 policy to a VC-1 policy in three settings designed to test emergent capabilities in symbol understanding, reasoning, and human recognition.
                 For each setting we find the 95% confidence intervals for policy success rate are disjiont, and we conclude with 95% confidence that RT-2 outperforms VC-1. 
               </p>
-              <img src="static/images/policy_comparison.png" alt="Confidence intervals for policy success rates">
+              <img src="static/images/policy_comparison.png" alt="Confidence intervals for policy success rates" width="75%">
             </div>
           </div>
         </div>
@@ -193,7 +215,7 @@
 
 
 <!-- Youtube video -->
-<section class="hero is-small is-light">
+<section class="hero is-small">
   <div class="hero-body">
     <div class="container">
       <!-- Paper video. -->
