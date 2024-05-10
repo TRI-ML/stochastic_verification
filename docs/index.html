@@ -151,8 +151,7 @@
           <p>
             We obtain upper confidence bounds on the cumulative distribution function (CDF) of the total reward obtained by diffusion policies in out-of-distribution robosuite environments.
             An upper confidence bound on the CDF can be interpreted as the worst-case distribution of reward that is consistent with the observed policy rollouts.
-            Here we show representative policy rollouts for the Square environment, and plot the in-distribution CDF of reward and our upper confidence bound constructed from 40 out-of-distribution policy rollouts.
-            The confidence bounds we obtain quantify our uncertainty in the performance of the robot in a concrete and interpretable manner.
+            Here we show representative policy rollouts for the Square environment, and plot the histogram of reward and our corresponding 95% upper confidence bound.
           </p>
           <video poster="" id="tree" autoplay controls muted loop height="100%">
           <source src="static/videos/sim_video.mp4" type="video/mp4">
@@ -174,8 +173,7 @@
         <h2 class="title is-3">Evaluation in Hardware</h2>
         <div class="content has-text-justified">
           <p>
-            We obtain lower confidence bounds on the success rate of a diffusion policy tested in two out-of-distribution environments.
-            The confidence bounds we obtain make the most efficient use of the 50 policy rollouts used to estimate the performance of the robot.
+            We obtain 95% lower confidence bounds on the success rate of a diffusion policy tested in two out-of-distribution environments.
             The confidence bounds we obtain quantify our uncertainty in the performance of the robot in a concrete and interpretable manner.
           </p>
           <video poster="" id="tree" autoplay controls muted loop height="100%">
@@ -199,9 +197,9 @@
           <div class="columns is-vcentered">
             <div class="column is-one-half">
               <p>
-                We can confidently compare two policies using our confidence bounds.
+                We can also compare two policies using our confidence bounds.
                 Here we apply our statistical bounds to the recent results from the <a href="https://arxiv.org/abs/2307.15818" target="_blank">RT-2 paper</a>, where the authors compare their RT-2 policy to a VC-1 policy in three settings designed to test emergent capabilities in symbol understanding, reasoning, and human recognition.
-                For each setting we find the 95% confidence intervals for policy success rate are disjiont, and we conclude with 95% confidence that RT-2 outperforms VC-1. 
+                For each setting we find the 95% confidence intervals for policy success rate are disjoint, and we conclude with 95% confidence that RT-2 outperforms VC-1 in these settings. 
               </p>
               <div style="text-align: center;">
               <img src="static/images/policy_comparison.png" alt="Confidence intervals for policy success rates" width="75%">
