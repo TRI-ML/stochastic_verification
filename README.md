@@ -33,13 +33,12 @@ The data from the hardware experiments is in the `results/pour_ice/` directory.
 The notebook `analyze_results_hardware.ipynb` loads this data and produces confidence bounds. The results are used to make Figure 7 in the paper.
 
 #### Policy Comparison Experiment
-**TODO**
-
+The notebook `analyze_results_comparisons.ipynb` produces the confidence bounds for this experiment. The results are used to make Figure 8 in the paper.
 
 ## Analyzing The Bounds
 Comparing the tightness of the binomial bound we use to the Clopper-Pearson bound is done in the [`binomial_CIs`](https://github.com/TRI-ML/binomial_CIs) repository. Specifically, the notebook `tradeoff_table.ipynb` produces Figure 3 in the paper.
 
-Comparing the tightness of the CDF bound we use (based on the Kolmogorov-Smirnov test) to CDF bound from the DKW inequality is done in the **TODO** notebook. This notebook produces Figure 4 in the paper.
+Comparing the tightness of the CDF bound we use (based on the Kolmogorov-Smirnov test) to the CDF bound from the DKW inequality is done in the `analyze_cdf_bounds.ipynb` notebook. This notebook produces Figure 4 in the paper.
 
 ## Running New Experiments
 To run new experiments you must first download the trained policies from the [Diffusion Policy](https://diffusion-policy.cs.columbia.edu/) paper. These policies can be found at the url [https://diffusion-policy.cs.columbia.edu/data/](https://diffusion-policy.cs.columbia.edu/data/).
